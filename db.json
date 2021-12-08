@@ -1,0 +1,60 @@
+{
+  "students": [
+    {
+      "RollNumber": "17241A0334",
+      "Name": "surya",
+      "DateOfBirth": "22-01-1999",
+      "Score": "900",
+      "id": 8
+    },
+    {
+      "RollNumber": "17241A0332",
+      "Name": "maibu",
+      "DateOfBirth": "22-01-1999",
+      "Score": "953",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "name": "Mohammad Mahaboob Pasha",
+      "email": "mdmaibubpasha@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "Mohammad",
+      "email": "mdmaibubpasha@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 3
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Mohammad mahaboob pasha",
+      "email": "mdmaibubpasha@gmail.com",
+      "password": "123",
+      "mobile": 8328118017,
+      "id": 1
+    },
+    {
+      "fullname": "pashi",
+      "email": "maibu",
+      "password": "123",
+      "mobile": 123,
+      "id": 2
+    },
+    {
+      "fullname": "Mohammad mahaboob pasha",
+      "email": "mdmaibubpasha@gmail.com",
+      "password": "1234",
+      "mobile": 8328118017,
+      "id": 3
+    }
+  ]
+}

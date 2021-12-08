@@ -1,0 +1,16 @@
+<h2 align="center"><b>Find Result</b></h2>
+<a class="link mt-2 ml-4" routerLink="">Back</a>
+
+<div class="container">
+    <form [formGroup]="slogin" (ngSubmit)="loginForm()">
+        <div class="mb-3">
+            <label>Roll Number</label>
+            <input type="text" class="form-control" formControlName="rollNumber">
+        </div>
+        <div class="mb-3">
+            <label>Name</label>
+            <input type="text" class="form-control" formControlName="name">
+        </div>
+        <button  type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

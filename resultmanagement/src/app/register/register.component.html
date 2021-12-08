@@ -1,0 +1,29 @@
+<h1>Register new teacher</h1>
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success...!</strong> The have been registered  successfully.
+    <button  (click)="closeAlert()"   type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<a class="link" routerLink="">Back</a>
+
+<form [formGroup]="register" (ngSubmit)="collection()">
+    <div class="container fluid">
+        <!-- <div class="mb-3">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
+        </div> -->
+        
+        <div class="mb-3">
+            <label>Email address</label>
+            <input type="text" class="form-control" placeholder="Enter Email" formControlName="email">
+            <!-- <span class="error" *ngIf="email.invalid?">email is required</span> -->
+        </div>
+        <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Enter Password" formControlName="password">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+</form>

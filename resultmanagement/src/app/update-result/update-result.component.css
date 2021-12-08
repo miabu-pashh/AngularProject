@@ -1,0 +1,14 @@
+a.link {
+    background-color: #008CBA;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 8px;
+}
+.container  {
+    height: 220px; /* Sets the height */
+    width: 50%; /* Sets the width */
+  }

@@ -1,0 +1,15 @@
+.container  {
+    height: 220px; /* Sets the height */
+    width: 50%; /* Sets the width */
+  }
+  a.add {
+    background-color: #008CBA;;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    float: right;
+    border-radius: 8px;
+
+  }

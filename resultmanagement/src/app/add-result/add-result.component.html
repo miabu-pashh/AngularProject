@@ -1,0 +1,32 @@
+
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success...!</strong> The Record has been entered successfully.
+    <button  (click)="closeAlert()"   type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<a class="link mt-2 ml-4" routerLink="/list">Back</a>
+
+
+<form [formGroup]="addStudent" (ngSubmit)="collectStudent()">
+    <div class="container">
+        <div class="mb-3">
+            <label>Roll Number</label>
+            <input type="text"  required class="form-control" placeholder="Enter Roll Number" formControlName="RollNumber">
+        </div>
+        <div class="mb-3">
+            <label>Name</label>
+            <input type="text"  required class="form-control" placeholder="Enter Name" formControlName="Name"  required>
+        </div>
+        <div class="mb-3">
+            <label>Dat Of Birth</label>
+            <input type="text"  required class="form-control" placeholder="Enter Date Of Birth" formControlName="DateOfBirth" required>
+        </div>
+        <div class="mb-3">
+            <label>Score</label>
+            <input type="text"  required class="form-control" placeholder="Enter Score" formControlName="Score" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+</form>

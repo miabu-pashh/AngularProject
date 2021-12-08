@@ -1,0 +1,39 @@
+
+<a class="add mt-4 mb-3 mr-4" routerLink="add">Add Student</a>
+<br>
+<br>
+<div class="container ">
+<table class="table mt-10">
+    <thead>
+      <tr>
+        <!-- <th scope="col">Id</th> -->
+        <th scope="col">RollNumber</th>
+        <th scope="col">Name</th>
+        <th scope="col">Date Of Birth</th>
+        <th scope="col">Score</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr *ngFor="let item of collection"> -->
+       <tr *ngFor="let item of collection ">
+          <!-- <th>{{item.id}}</th> -->
+          <th>{{item.RollNumber}}</th>
+          <th>{{item.Name}}</th>
+          <th>{{item.DateOfBirth}}</th>
+          <th>{{item.Score}}</th>
+          <!-- <th><button (click)="deleteStudent(item.id)" 
+            class="fa fa-trash" style="font-size:20px;color:red;">Delete</button> -->
+          <th><i (click)="deleteStudent(item.id)" 
+            class="fa fa-trash" style="font-size:20px;color:red;">
+          </i>
+          <a routerLink="/update/{{item.id}}">
+            <i  
+            class="fa fa-edit" style="font-size:20px;color:rgb(0, 110, 255);">
+          </i>
+        </a>
+          </th> 
+      </tr>
+    </tbody>
+  </table>
+</div>
